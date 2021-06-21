@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch for debug on *nix",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "debug"
+      ],
+      "port": 5858
+    },
+    {
+      "name": "Launch for debug on Windows",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "runtimeExecutable": "yarn.cmd",
+      "runtimeArgs": [
+        "run",
+        "debug"
+      ],
+      "port": 5858
+    },    
+    {
+      "name": "Attach to Remote",
+      "type": "node",
+      "request": "attach",
+      "address": "124.204.33.42",
+      "port": 5858,
+      "localRoot": "${workspaceRoot}",
+      "remoteRoot": "/index-pro.js"
+    }
+  ]
+}

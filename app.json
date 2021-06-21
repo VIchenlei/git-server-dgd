@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "locserver",
+      "script": "index-pro.js",
+      "watch": ["bin"],
+      "log_date_format": "YYYY-MM-DD HH:mm Z"
+    }
+  ]
+}
